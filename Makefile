@@ -17,7 +17,7 @@ $(PYTHON):
 	echo Please install a recent python 3.10 build from https://www.python.org/downloads/
 	exit 1
 
-$(DIST_DIR)/$(APP_NAME): setup.py emulator
+$(DIST_DIR)/$(APP_NAME): setup.py
 	$(PYTHON) setup.py py2app
 
 .PHONY: alias
